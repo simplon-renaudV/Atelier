@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Planning de l'atelier</title>
+	<link rel='stylesheet' href='FullCalendar/fullcalendar.css'>
+	<link rel="stylesheet" href="JqueryUI/jquery-ui.min.css">
+	<link rel="stylesheet" href="JqueryUI/jquery-ui.theme.css">
+	<link rel="stylesheet"href="style.css">
+	<link rel="stylesheet" href="formulaire.css">
+  	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head> 
+
+<body>
+	<div class="titres">
+  <h1 class="logo">L'Atelier de chez mémé</h1></br>
+  <h2 class="soustitre1">#FabLab  #DIY #Narbonne #Bricolage</h2>
+  <h3 class="soustitre2">Si mémé peut le faire...</h3>
+  <h4 class="soustitre3">toi aussi !</h4>
+  </br>
+</div>
+
+  <ul id="menu">
+    <li><a href="index.html" title="Voir la page d'accueil">Accueil</a></li>
+    <li><a href="#" title="Voir l'atelier">L'Atelier</a>
+    <ul class="sousmenu"><li><a href="commentCaMarche.html" title="Comment ça marche">Comment ça marche ?</a></li></br>
+      <li><a href="bidule.html" title="Matériel">Matériel</a></li></br>
+      <li><a href="bidule.html" title="Tarif">Tarif</a></li>
+    </ul></li>
+
+    <li><a href="planning.html" title="Voir le planning">Planning des cours</a></li>
+    <li><a href="savoirs.html" title="Voir les savoirs">Partage des Savoirs</a></li>
+  </ul>
+
+	<form name="formulaire" method="post" action="message.php" onSubmit="return verif()"> 
+		<div id="contact" class="page">   
+		<label for="nom">Nom : </label><input type="text" id="nom" name='nom' placeholder="Saisissez votre nom "/><br/>
+		<br/>
+   		<label for="prenom">Prénom :</label><input type="text" id="prenom" name='prenom' placeholder="Saisissez votre prénom "/><br/>
+		<br/>
+		<label for="email">Email : </label><input type="email" id='mail' name='mail' placeholder="Saisissez votre email"/><br/>
+	   	<br/>  
+	   	<label for="reservation">Heure de début :</label>
+            <select name='hdebut' id='hdebut'>
+   		   	   <option value='09:00'>09:00</option>
+			   <option value='10:00'>10:00</option>
+			   <option value='11:00'>11:00</option>
+			   <option value='12:00'>12:00</option>
+			   <option value='13:00'>13:00</option>
+			   <option value='14:00'>14:00</option>
+			   <option value='15:00'>15:00</option>
+			   <option value='16:00'>16:00</option>
+			</select>
+      <br />
+		<br/>
+		<label for="reservation">Heure de fin :</label>
+            <select id="hfin" name='hfin'>
+			<option value='10:00'>10:00</option>
+   			<option value='11:00'>11:00</option>
+   			<option value='12:00'>12:00</option>
+   			<option value='13:00'>13:00</option>
+   			<option value='14:00'>14:00</option>
+   			<option value='15:00'>15:00</option>
+   			<option value='16:00'>16:00</option>
+   			<option value='17:00'>17:00</option>
+   			</select>
+		<br />
+		</br>
+ 		<label for="jour">Jour de réservation :</label><input type="date" id="datepicker" name='date' placeholder="01/02/2016"/><br /><br />
+   		<input type="submit" class="submit" value="Réserver"></div>
+	</form>
+
+<script src='Jquery/jquery-2.2.2.min.js'></script>
+<script src='JqueryUI/jquery-ui.min.js'></script>
+<script src='planning.js'></script>
+</body>
+</html>

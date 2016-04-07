@@ -1,0 +1,292 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+
+}
+/*Logo en tete*/
+.logo{
+background-image: url("img/logo.png");
+background-repeat: no-repeat;
+height: 310px;
+margin:auto;
+width: 290px;
+text-indent: -3000px; /*permet de ne pas voir le texte du h1 mais visible par google*/
+}
+
+/*h2*/
+.soustitre1{
+text-align: center;
+font-family: cursive;
+margin-top: -5.5%;
+}
+ /*h3*/
+.soustitre2{
+text-align: left;
+font-family: 'Courgette', cursive;
+font-size: 25px;
+margin-top: -5%;
+margin-left: 25%;
+}
+
+
+.soustitre3{
+text-align: right;
+font-family: 'Courgette', cursive;
+font-size: 25px;
+margin-top: -2%;
+margin-right: 35%;
+}
+
+/*enlever soulignement liens menu et changement couleur + police*/
+a:link{text-decoration:none}
+a { color: #DEB887; }
+a:link{font-family: 'Courgette', cursive;
+font-size: 150%;}
+
+/* titres*/
+.titres{
+  background-color: #DEA57B;
+  height: 300px;
+  width: 1286px;
+}
+/* placement des liens du menu*/
+#menu{
+background-color:#403340;
+width: 1286px;
+}
+
+/*sous menu atelier*/
+.sousmenu{
+  position: absolute;
+  background-color:#403340;
+  display: none;
+  font-size: 80%;
+}
+
+li:hover ul.sousmenu
+{
+  display:block;
+}
+
+
+/*espacement entre liens du menu*/
+li{
+  display: inline-block;
+  margin-left: 8%;
+}
+
+
+/*fond image de la page d'accueil*/
+
+#img{
+background-size: cover;
+margin: 0;
+padding: 0;
+z-index: 1;
+}
+
+
+
+/*footer*/
+#footer{
+  background-color: #403340;
+  width: 1286px;
+  height: 45px;
+  margin-top: 25px;
+}
+
+/*bas de page 1 icones*/
+.BP1{
+  margin-right: 7%;
+  float: right;
+}
+
+/* Titre réservation */
+#reservation
+{
+  margin: 10px 0;
+  text-align: center;
+  font-family: 'Courgette', cursive;
+  font-size: 20px;
+}
+
+#calendar
+{
+  margin-bottom: 20px;
+}
+
+/*CSS Page Commment ca marche*/
+.commentcamarche{
+text-align: center;
+ margin-top: 0.5%;
+color: white;
+ padding-left: 150px;
+  padding-right: 150px;
+}
+
+
+.textecommentcamarche1{
+
+font-family: 'EB Garamond', serif;
+text-align:justify-all;
+font-size: 170%;
+color: white;
+
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.textecommentcamarche2{
+font-family: 'EB Garamond', serif;
+text-align:justify-all;
+font-size: 170%;
+color: white;
+
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.textecommentcamarche3{
+font-family: 'EB Garamond', serif;
+text-align:justify-all;
+font-size: 170%;
+color: white;
+
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+#fondComment {
+  background: url('img/fond-vierge.png') no-repeat;
+  background-size: cover;
+
+}
+
+/*CSS Materiel*/
+
+#materiel{
+  background-image: url("img/fond-vierge.png");
+}
+
+.materiel{
+  margin: 2% 0;
+  text-align: center;
+  color: white;
+  font-family:'EB Garamond', serif;
+
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.imprimante3D{
+font-size:20px;
+color: white;
+font-family: 'EB Garamond', serif;
+text-align: justify;
+padding-left: 150px;
+padding-right: 150px;
+
+}
+
+
+.plotter{
+font-size:20px;
+margin-top: 50px;
+color: white;
+font-family: 'EB Garamond', serif;
+text-align: justify;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+
+#tarifs{
+ background-image:url("img/fond-vierge.png");
+}
+.tarifs{
+ padding-left: 150px;
+ padding-right: 150px;
+}
+
+.team{
+ text-align: center;
+ font-size: 30px;
+ margin-top: 50px;
+ margin-bottom: 40px;
+}
+.plan{
+ margin-top: 50px;
+ margin-left: 250px;
+ display: inline-block;
+ }
+ .adresse{
+   display: inline-block;
+   margin-left: 200px;
+   text-align: center;
+   font-family: 'EB Garamond', serif;
+     }
+     .apropos{
+     font-family: 'EB Garamond', serif;
+     text-align: justify;
+     font-size: 15px;
+     padding-left: 150px;
+     padding-right: 150px;
+     }
+#tarifs{
+ background-image:url("/lateliermeme/img/fond-vierge.png");
+}
+.tarifs{
+ padding-left: 150px;
+ padding-right: 150px;
+}
+.projet{
+ float: right;
+ display: inline-block;
+ margin-right: 200px;
+ margin-top: 130px;
+}
+.technique{
+margin-left: 200px;
+margin-top: 50px;
+}
+.fleche{
+ margin-top: -120px;
+ text-align: right;
+ margin-right: 400px;
+}
+.liste{
+list-style-type: circle;
+}
+.list{
+font-size: 25px;
+font-family: 'EB Garamond', serif;
+display: block;
+margin-left: 450px;
+margin-top: 20px;
+}
+.list:before {
+ content: " § "; /* caractère ISO 10646 */  margin-right: 15px;
+}
+
+.bdd p {
+text-align: center;
+}
+
+#tarifs{
+  background-image: url("img/fond-vierge.png");
+}

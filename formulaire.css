@@ -1,0 +1,19 @@
+html {
+	background: url('img/fond-vierge.png') no-repeat;
+	background-size: cover;
+}
+
+#contact  {
+	margin: 10%;
+	margin-left: 40%;
+	margin-top: 5%;
+}
+
+label {
+	text-align: left;
+	display: block;
+}
+
+.submit {
+	
+}
